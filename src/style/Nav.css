@@ -1,0 +1,42 @@
+/* *********** */
+/* Nav General */
+/* *********** */
+
+.desktopNav {
+  position: fixed;
+  margin-top: 1em;
+  padding: 0.313em 0.938em 0.313em;
+  z-index: 2;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktopNav li {
+  display: inline;
+  font-family: var(--ff__bread01);
+  font-size: var(--fs__h3);
+  margin-right: 0.7em;
+  cursor: pointer;
+}
+
+.desktopNav a,
+.mobileNav a {
+  color: var(--clr__accent);
+  padding: 0.5em;
+}
+
+.desktopNav a:link,
+.mobileNav a:link {
+  text-decoration: none;
+}
+
+.desktopNav a:hover {
+  color: var(--clr__light);
+}
+
+.mobileNav {
+  visibility: hidden;
+}

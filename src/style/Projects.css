@@ -1,0 +1,120 @@
+/* *********** */
+/* Projects General */
+/* *********** */
+
+#projectsSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectsTextContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  height: 5em;
+  width: 100%;
+  margin-bottom: 3.125em;
+}
+
+#projectsText {
+  font-family: var(--ff__head01);
+  font-style: italic;
+  font-size: 1.2em;
+  color: var(--clr__accent);
+}
+
+.projects {
+  width: 100%;
+  padding-bottom: 3.125em;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects a {
+  text-decoration: none;
+}
+
+.projectsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5em;
+  padding-left: 1em;
+}
+
+.projectsDiv div {
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.projects a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.pancakes:hover {
+  opacity: 0.7;
+  filter: grayscale(0);
+  cursor: pointer;
+}
+
+.pancakes {
+  width: 20em;
+  height: 20em;
+
+  opacity: 0.4;
+  display: flex;
+  filter: grayscale(1);
+}
+
+.pancakes img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.pancakes div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+
+  opacity: 0;
+}
+
+.pancakes div p {
+  width: 100%;
+  height: 100%;
+
+  padding-top: 0.06em;
+
+  padding-bottom: 1em;
+  border: 10px solid var(--clr__accent);
+
+  word-wrap: break-word;
+  line-height: 0.8em;
+
+  font-size: 7.5em;
+  font-family: var(--ff__bread01);
+  color: var(--clr__accent);
+}
+
+.pancake__container1:hover .pancaketext,
+.pancake__container2:hover .pancaketext,
+.pancake__container3:hover .pancaketext,
+.pancake__container4:hover .pancaketext,
+.pancake__container5:hover .pancaketext,
+.pancake__container6:hover .pancaketext {
+  opacity: 1;
+}
+
+.pancaketext__device {
+  visibility: hidden;
+  margin-top: 0.5em;
+  font-family: var(--ff__head01);
+  font-size: 1.2em;
+}
