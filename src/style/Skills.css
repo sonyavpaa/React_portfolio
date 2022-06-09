@@ -1,0 +1,43 @@
+/* *********** */
+/* Skills General */
+/* *********** */
+
+.skills {
+  width: 100%;
+  padding-bottom: 3em;
+}
+
+.skillsDivCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.skillsDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.skillsIcons {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.skills p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 21em;
+  text-align: center;
+  font-family: var(--ff__bread01);
+  color: var(--clr__light);
+}
+
+.skillsIcons img {
+  width: 15em;
+  height: 15em;
+  padding: 0.5em;
+}

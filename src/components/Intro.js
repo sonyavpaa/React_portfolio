@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../style/Intro.css";
 
-const Intro = () => {
+const Intro = ({ getName }) => {
   const [showWelcome, setShowWelcome] = useState("welcomeTextContainer");
 
   // animation for the welcome text after name input recieved
@@ -11,6 +11,7 @@ const Intro = () => {
       if (e.target.value.length > 0) {
         userName = e.target.value;
         e.target.className = "hide";
+        getName(e);
 
         // helloName.textContent = e.target.value;
         // userNameInput.classList.add("hide");
