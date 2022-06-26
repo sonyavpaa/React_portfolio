@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import LayOut from "./pages/LayOut";
 import Home from "./components/Home";
-import Projects from "./components/Projects";
+import CatchingLuv from "./components/speedGame/CatchingLuv";
 
 const App = () => {
   return (
@@ -11,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LayOut />}>
           <Route index element={<Home />}></Route>
+          <Route path="catchingluv" element={<CatchingLuv />} />
         </Route>
       </Routes>
     </Router>

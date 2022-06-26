@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../style/Projects.css";
 import "../style/Mobile.css";
@@ -28,7 +29,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <a href="/gallery.html">
+                <Link to="/catchingluv">
                   <img
                     className="pancake1"
                     src={require("../assets/img/pancake_01.jpg")}
@@ -37,7 +38,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                   <div className="pancaketext pancaketext1">
                     <p>PANCAKE I</p>
                   </div>
-                </a>
+                </Link>
                 <div className="pancaketextDevice">
                   <p></p>
                 </div>
@@ -48,7 +49,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <a href="/luv.html">
+                <a>
                   <img
                     className="pancake2"
                     src={require("../assets/img/pancake_02.jpg")}
@@ -68,7 +69,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <a href="#">
+                <a>
                   <img
                     className="pancake3"
                     src={require("../assets/img/pancake_03.jpg")}
@@ -88,7 +89,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <a href="#">
+                <a>
                   <img
                     className="pancake4"
                     src={require("../assets/img/table_01.jpg")}
@@ -108,7 +109,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <a href="#">
+                <a>
                   <img
                     className="pancake5"
                     src={require("../assets/img/table_01.jpg")}
@@ -128,7 +129,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <a href="#">
+                <a>
                   <img
                     className="pancake6"
                     src={require("../assets/img/table_01.jpg")}

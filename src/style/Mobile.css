@@ -14,7 +14,7 @@
   }
 
   .desktopNav li {
-    font-size: 2vh;
+    font-size: 2vh !important;
   }
 
   .introSection h1 {
@@ -95,9 +95,9 @@
   }
 }
 
-@media screen and (min-width: 430px) and (max-width: 740px) {
+@media screen and (min-width: 430px) and (max-width: 610px) {
   .desktopNav li {
-    font-size: 5vh;
+    font-size: 5vh !important;
   }
   #projects,
   #about_me,
@@ -116,5 +116,58 @@
 
   .about_me p {
     font-size: 3.5vw !important;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .introSection {
+    min-height: 60vh !important;
+  }
+  .introSection h1 {
+    font-size: 5vw;
+    margin-top: 0.2em;
+  }
+
+  .desktopNav li {
+    font-size: 7vh !important;
+  }
+}
+
+@media screen and (min-width: 667px) and (max-width: 690px) {
+  .introSection h1 {
+    font-size: 5vw;
+    margin-top: 1em !important;
+  }
+  .desktopNav li {
+    font-size: 2.5vh !important;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 740px) {
+  .introSection {
+    min-height: 70vh !important;
+  }
+
+  .introSection h1 {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #logoBox {
+    scale: 80%;
+  }
+  .about_me {
+    height: 125vh !important;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 700px) {
+  .introSection h1 {
+    margin-top: 3em;
+    font-size: 5vw;
+  }
+  .desktopNav li {
+    font-size: 4vw !important;
   }
 }
