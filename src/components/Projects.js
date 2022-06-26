@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../style/Projects.css";
+import "../style/Mobile.css";
 
 const Projects = ({ onMouseEnter, onMouseLeave }) => {
   // hover effect for pancake desc text
