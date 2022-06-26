@@ -1,0 +1,70 @@
+@media screen and (max-width: 800px) {
+  #logoBox, .right {
+    display: none;
+  }
+  .desktopNav li {
+    font-size: 2vh;
+  }
+
+  .introSection h1 {
+    font-size: 7vw;
+  }
+
+  .introSection {
+    max-height: 40vh;
+  }
+
+  .welcomeContainer {
+    visibility: hidden;
+  }
+
+  .about_me {
+    width: 100%;
+    min-height: none;
+    height: 0em;
+  }
+
+  #projects,
+  #about_me,
+  #skills,
+  #contact {
+    font-size: 7vw;
+  }
+
+  .about_mePContainer {
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    margin-top: 3em;
+    display: flex;
+    text-align: center;
+  }
+
+  .about_mePContainer p {
+    margin: 0;
+    padding: 0;
+    font-size: 2em !important;
+  }
+
+  .contactform h3 {
+    font-size: 3vw;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about_me {
+    min-height: 60vh !important;
+  }
+
+  .about_mePContainer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em !important;
+  }
+
+  .contactform h3 {
+    font-size: 4.5vw;
+    margin-bottom: 0.5em;
+  }
+}

@@ -23,10 +23,10 @@
 
   --ff__surprise01: "Patua One", cursive;
 
-  --fs__small01: 2em;
-  --fs__h1: 3em;
-  --fs__h2: 3em;
-  --fs__h3: 1.5em;
+  --fs__small01: 2vw;
+  --fs__h1: 4vw;
+  --fs__h2: 4vw;
+  --fs__h3: 2.5vw;
 }
 
 html {

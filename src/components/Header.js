@@ -1,4 +1,5 @@
 import DesktopNav from "./DesktopNav";
+import "../style/Nav.css";
 
 const Header = () => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../style/About.css";
+import "../style/Mobile.css";
 
 const AboutMe = ({ username }) => {
   return (

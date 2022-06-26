@@ -40,6 +40,10 @@ input {
   outline: none;
 }
 
+textarea {
+  font-size: 1em;
+}
+
 input:focus,
 textarea:focus {
   outline: none;
