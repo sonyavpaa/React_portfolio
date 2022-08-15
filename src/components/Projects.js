@@ -29,7 +29,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
               >
-                <Link to="/catchingluv">
+                <Link to="/">
                   <img
                     className="pancake1"
                     src={require("../assets/img/pancake_01.jpg")}
