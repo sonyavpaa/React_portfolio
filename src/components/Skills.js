@@ -24,6 +24,7 @@ const Skills = () => {
             <img src={require("../assets/img/html-5.png")} alt="html" />
             <img src={require("../assets/img/js.png")} alt="javascript" />
             <img src={require("../assets/img/php.png")} alt="php" />
+            <img src={require("../assets/img/react.png")} alt="react" />
           </div>
         </div>
       </div>

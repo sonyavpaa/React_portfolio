@@ -27,7 +27,7 @@ const Footer = () => {
           href="https://www.flaticon.com/free-icons/js"
           title="js icons"
         >
-          Js and Php icons created by Freepik - Flaticon
+          Js, React and Php icons created by Freepik - Flaticon
         </a>
       </div>
     </footer>

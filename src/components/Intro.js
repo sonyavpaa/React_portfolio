@@ -33,7 +33,7 @@ const Intro = ({ getName }) => {
   let charIndex = 0;
   const type = () => {
     let welcomeText = document.querySelector(".welcomeText");
-    let welcomeTextAnimation = `Hi there ${userName}! Welcome to Sonya Web! Let's scroll down together!`;
+    let welcomeTextAnimation = `Hi there ${userName}! Welcome to Sonya Web! I built this with React.js, let's scroll down together!`;
     const typingDelay = 100;
     if (charIndex < welcomeTextAnimation.length) {
       welcomeText.textContent += welcomeTextAnimation[charIndex];
