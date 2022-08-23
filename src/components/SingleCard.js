@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../style/SingleCard.css";
 
 const SingleCard = (props) => {

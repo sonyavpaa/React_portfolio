@@ -1,10 +1,10 @@
-import DesktopNav from "./DesktopNav";
+import Nav from "./Nav";
 import "../style/Nav.css";
 
 const Header = () => {
   return (
     <>
-      <DesktopNav />
+      <Nav />
     </>
   );
 };

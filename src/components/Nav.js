@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 import "../style/Nav.css";
 
-const DesktopNav = () => {
+const Nav = () => {
   return (
     <nav className="desktopNav">
       <ul>
@@ -30,4 +30,4 @@ const DesktopNav = () => {
   );
 };
 
-export default DesktopNav;
+export default Nav;

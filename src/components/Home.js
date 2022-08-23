@@ -7,6 +7,7 @@ import "../style/Home.css";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import ContactForm from "./ContactForm";
+import { projectsArr } from "../api/projectsAPI";
 
 const Home = () => {
   const [username, setUsername] = React.useState();
@@ -15,9 +16,11 @@ const Home = () => {
   };
   //pancake's text display on hover
   const pancakeTextHover = async (e) => {
-    let header = await e.target?.firstChild?.data;
+    console.log("inside hover", e.currentTarget.id);
+    let header = projectsArr[parseInt(e.currentTarget.id)]?.header;
+    let description = projectsArr[parseInt(e.currentTarget.id)]?.desc;
     let projectsText = await document.querySelector("#projectsText");
-    projectsText.innerHTML = `${header} </br>${header} description`;
+    projectsText.innerHTML = `${header} </br>${description}`;
   };
   const pancakeTextHoverOut = () => {
     let projectsText = document.querySelector("#projectsText");
