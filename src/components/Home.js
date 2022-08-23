@@ -16,7 +16,6 @@ const Home = () => {
   //pancake's text display on hover
   const pancakeTextHover = async (e) => {
     let header = await e.target?.firstChild?.data;
-    console.log(header);
     let projectsText = await document.querySelector("#projectsText");
     projectsText.innerHTML = `${header} </br>${header} description`;
   };

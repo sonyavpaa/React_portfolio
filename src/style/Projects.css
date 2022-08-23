@@ -5,7 +5,7 @@
 .pancakes a,
 .pancakeContainer1 a {
   position: absolute;
-  z-index: 101;
+  z-index: 4;
 }
 
 #projectsSection {
@@ -49,16 +49,10 @@
   padding-left: 1em;
 }
 
-.projectsDiv div {
+.projectsDiv .pancakes {
   flex-wrap: wrap;
   position: relative;
-}
-
-.projects a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
+  z-index: 5;
 }
 
 .pancakes:hover {
@@ -76,23 +70,29 @@
   filter: grayscale(1);
 }
 
+.pancakesFilterOff {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
 .pancakes img {
   width: 100%;
   object-fit: cover;
 }
 
-.pancakes div {
+.pancakes .pancaketext,
+.pancakes .pancaketextDevice {
   height: 100%;
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
   transition: all 0.2s ease-in-out;
-
+  z-index: 4;
   opacity: 0;
 }
 
-.pancakes div p {
+.pancakes div .pancakeP {
   width: 100%;
   height: 100%;
 
@@ -109,12 +109,12 @@
   color: var(--clr__accent);
 }
 
-.pancake__container1:hover .pancaketext,
-.pancake__container2:hover .pancaketext,
-.pancake__container3:hover .pancaketext,
-.pancake__container4:hover .pancaketext,
-.pancake__container5:hover .pancaketext,
-.pancake__container6:hover .pancaketext {
+.pancakeContainer1:hover .pancaketext,
+.pancakeContainer2:hover .pancaketext,
+.pancakeContainer3:hover .pancaketext,
+.pancakeContainer4:hover .pancaketext,
+.pancakeContainer5:hover .pancaketext,
+.pancakeContainer6:hover .pancaketext {
   opacity: 1;
 }
 
@@ -126,12 +126,11 @@
 }
 
 .pancaketextDevice {
-  z-index: 100;
+  z-index: 3;
   width: 100%;
   height: 100%;
 }
 
 .pancaketextDevice p {
   font-size: 15em;
-  color: red;
 }

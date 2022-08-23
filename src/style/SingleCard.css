@@ -1,0 +1,49 @@
+.singleCardHidden {
+  display: none;
+}
+
+.singleCardShow {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  position: absolute;
+  align-self: center;
+  z-index: 10;
+  background-color: rgba(186, 181, 248, 0.623);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  filter: grayscale(0);
+  padding: 0;
+  opacity: 1;
+}
+
+.singleCardMain {
+  border: 8px solid var(--clr__background03);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.singleCardMain p {
+  color: white;
+  font-family: "Source Code Pro";
+}
+
+.cardLink {
+  display: flex;
+  justify-content: center;
+}
+
+.cardLink a {
+  color: yellow;
+}
+
+.cardLink a:hover .cardLink {
+  color: red;
+}
