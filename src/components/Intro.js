@@ -13,9 +13,6 @@ const Intro = ({ getName }) => {
         e.target.className = "hide";
         getName(e);
 
-        // helloName.textContent = e.target.value;
-        // userNameInput.classList.add("hide");
-        // userNameInput.value = "";
         welcomeTextAnimate();
       }
     }

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-// import { BrowserView, isBrowser } from "react-device-detect";
-
-import SingleCard from "./SingleCard";
+import Pancake from "./Pancake";
 
 import "../style/Projects.css";
 import "../style/Mobile.css";
@@ -10,11 +8,20 @@ import "../style/Mobile.css";
 import { projectsArr } from "../api/projectsAPI";
 
 const Projects = ({ onMouseEnter, onMouseLeave }) => {
-  const [cardText, setCardText] = useState("");
+  const [popUpCardText, setCardText] = useState("");
   const [url, setUrl] = useState("");
 
   const toggleCard = (e) => {
     let numb = parseInt(e.currentTarget.id);
+    e.currentTarget.children[1].style = "opacity:0";
+    if (document.querySelector(".pancakesFilterOff")) {
+      document
+        .querySelectorAll(".pancakesFilterOff")
+        .forEach(
+          (item) => (item.className = `pancakes pancakeContainer${numb}`)
+        );
+    }
+
     if (
       e.currentTarget.className.includes("pancakes") &&
       e.currentTarget.className.includes("pancakesFilterOff") === false
@@ -27,7 +34,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
     if (e.currentTarget.lastChild.className === "singleCardShow") {
       return (e.currentTarget.lastChild.className = "singleCardHidden");
     }
-
+    // closes possible earlier opened cards
     if (document.querySelector(".singleCardShow")) {
       document.querySelector(".singleCardShow").className = "singleCardHidden";
       if (e.currentTarget.lastChild.className === "singleCardHidden") {
@@ -40,8 +47,8 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
     }
 
     // gets the correct project text
-
     e.currentTarget.lastChild.className = "singleCardShow";
+
     setCardText(projectsArr[numb].text);
     setUrl(projectsArr[numb].url);
   };
@@ -54,124 +61,73 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
         <div className="left">
           <div className="projects">
             <div className="projectsDiv">
-              <div
+              <Pancake
                 id="0"
-                className="pancakes pancakeContainer1"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                onClick={(e) => toggleCard(e)}
-              >
-                <img
-                  className="pancake1"
-                  src={require("../assets/img/pancake_01.jpg")}
-                  alt="pancakes"
-                />
-                <div className="pancaketext pancaketext1">
-                  <p className="pancakeP">PANCAKE I</p>
-                </div>
+                click={(e) => toggleCard(e)}
+                idRoman="I"
+                popUpHidden="singleCardHidden"
+                url={url}
+                popUpCardText={popUpCardText}
+              />
 
-                <SingleCard
-                  active="singleCardHidden"
-                  url={url}
-                  text={cardText}
-                />
-              </div>
-
-              <div
+              <Pancake
                 id="1"
-                className="pancakes pancakeContainer2"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                onClick={(e) => toggleCard(e)}
-              >
-                <img
-                  className="pancake2"
-                  src={require("../assets/img/pancake_02.jpg")}
-                  alt="pancakes"
-                />
-                <div className="pancaketext pancaketext2">
-                  <p className="pancakeP">PANCAKE II</p>
-                </div>
+                click={(e) => toggleCard(e)}
+                idRoman="II"
+                popUpHidden="singleCardHidden"
+                url={url}
+                popUpCardText={popUpCardText}
+              />
 
-                <SingleCard active="singleCardHidden" text={cardText} />
-              </div>
-              <div
+              <Pancake
                 id="2"
-                className="pancakes pancakeContainer3"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                onClick={(e) => toggleCard(e)}
-              >
-                <img
-                  className="pancake3"
-                  src={require("../assets/img/pancake_03.jpg")}
-                  alt="pancakes"
-                />
-                <div className="pancaketext pancaketext3">
-                  <p className="pancakeP">PANCAKE III</p>
-                </div>
+                click={(e) => toggleCard(e)}
+                idRoman="III"
+                popUpHidden="singleCardHidden"
+                url={url}
+                popUpCardText={popUpCardText}
+              />
 
-                <SingleCard active="singleCardHidden" text={cardText} />
-              </div>
-
-              <div
+              <Pancake
                 id="3"
-                className="pancakes pancakeContainer4"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                onClick={(e) => toggleCard(e)}
-              >
-                <img
-                  className="pancake4"
-                  src={require("../assets/img/table_01.jpg")}
-                  alt="pancakes"
-                />
-                <div className="pancaketext pancaketext4">
-                  <p className="pancakeP">PANCAKE IV</p>
-                </div>
+                click={(e) => toggleCard(e)}
+                idRoman="IV"
+                popUpHidden="singleCardHidden"
+                url={url}
+                popUpCardText={popUpCardText}
+              />
 
-                <SingleCard active="singleCardHidden" text={cardText} />
-              </div>
-
-              <div
+              <Pancake
                 id="4"
-                className="pancakes pancakeContainer5"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                onClick={(e) => toggleCard(e)}
-              >
-                <img
-                  className="pancake5"
-                  src={require("../assets/img/table_01.jpg")}
-                  alt="pancakes"
-                />
-                <div className="pancaketext pancaketext5">
-                  <p className="pancakeP">PANCAKE V</p>
-                </div>
+                click={(e) => toggleCard(e)}
+                idRoman="V"
+                popUpHidden="singleCardHidden"
+                url={url}
+                popUpCardText={popUpCardText}
+              />
 
-                <SingleCard active="singleCardHidden" text={cardText} />
-              </div>
-
-              <div
+              <Pancake
                 id="5"
-                className="pancakes pancakeContainer6"
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                onClick={(e) => toggleCard(e)}
-              >
-                <img
-                  className="pancake6"
-                  src={require("../assets/img/table_01.jpg")}
-                  alt="pancakes"
-                />
-                <div className="pancaketext pancaketext6">
-                  <p className="pancakeP">PANCAKE VI</p>
-                </div>
-
-                <SingleCard active="singleCardHidden" text={cardText} />
-              </div>
+                click={(e) => toggleCard(e)}
+                idRoman="VI"
+                popUpHidden="singleCardHidden"
+                url={url}
+                popUpCardText={popUpCardText}
+              />
             </div>
-            {/* <!--- closing .projects__div --> */}
+            {/* <!--- closing .projectsDiv --> */}
           </div>
           {/* <!--- closing .projects --> */}
         </div>

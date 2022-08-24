@@ -2,12 +2,6 @@
 /* Projects General */
 /* *********** */
 
-.pancakes a,
-.pancakeContainer1 a {
-  position: absolute;
-  z-index: 4;
-}
-
 #projectsSection {
   display: flex;
   align-items: center;
@@ -35,10 +29,6 @@
   padding-bottom: 3.125em;
   display: flex;
   flex-direction: column;
-}
-
-.projects a {
-  text-decoration: none;
 }
 
 .projectsDiv {
@@ -80,8 +70,7 @@
   object-fit: cover;
 }
 
-.pancakes .pancaketext,
-.pancakes .pancaketextDevice {
+.pancaketext {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -92,7 +81,7 @@
   opacity: 0;
 }
 
-.pancakes div .pancakeP {
+.pancakeP {
   width: 100%;
   height: 100%;
 
@@ -107,30 +96,4 @@
   font-size: 7.5em;
   font-family: var(--ff__bread01);
   color: var(--clr__accent);
-}
-
-.pancakeContainer1:hover .pancaketext,
-.pancakeContainer2:hover .pancaketext,
-.pancakeContainer3:hover .pancaketext,
-.pancakeContainer4:hover .pancaketext,
-.pancakeContainer5:hover .pancaketext,
-.pancakeContainer6:hover .pancaketext {
-  opacity: 1;
-}
-
-.pancaketext__device {
-  visibility: hidden;
-  margin-top: 0.5em;
-  font-family: var(--ff__head01);
-  font-size: 1.2em;
-}
-
-.pancaketextDevice {
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-}
-
-.pancaketextDevice p {
-  font-size: 15em;
 }

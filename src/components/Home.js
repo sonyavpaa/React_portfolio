@@ -8,6 +8,7 @@ import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import ContactForm from "./ContactForm";
 import { projectsArr } from "../api/projectsAPI";
+import { isBrowser } from "react-device-detect";
 
 const Home = () => {
   const [username, setUsername] = React.useState();
@@ -16,13 +17,18 @@ const Home = () => {
   };
   //pancake's text display on hover
   const pancakeTextHover = async (e) => {
-    console.log("inside hover", e.currentTarget.id);
+    if (isBrowser) {
+      e.currentTarget.children[1].style = "opacity:1";
+    }
     let header = projectsArr[parseInt(e.currentTarget.id)]?.header;
     let description = projectsArr[parseInt(e.currentTarget.id)]?.desc;
     let projectsText = await document.querySelector("#projectsText");
     projectsText.innerHTML = `${header} </br>${description}`;
   };
-  const pancakeTextHoverOut = () => {
+  const pancakeTextHoverOut = (e) => {
+    if (isBrowser) {
+      e.currentTarget.children[1].style = "opacity:0";
+    }
     let projectsText = document.querySelector("#projectsText");
     projectsText.innerHTML = "";
   };

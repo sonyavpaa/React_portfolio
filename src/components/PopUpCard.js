@@ -1,7 +1,7 @@
 import React from "react";
-import "../style/SingleCard.css";
+import "../style/PopUpCard.css";
 
-const SingleCard = (props) => {
+const PopUpCard = (props) => {
   return (
     <div className={props.active} onClick={props.onclick}>
       <div className="singleCardMain">
@@ -13,4 +13,4 @@ const SingleCard = (props) => {
   );
 };
 
-export default SingleCard;
+export default PopUpCard;
