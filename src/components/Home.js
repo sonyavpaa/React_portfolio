@@ -7,7 +7,7 @@ import "../style/Home.css";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import ContactForm from "./ContactForm";
-import { projectsArr } from "../api/projectsAPI";
+import { projectsArr } from "../assets/projectsAPI";
 import { isBrowser } from "react-device-detect";
 
 const Home = () => {

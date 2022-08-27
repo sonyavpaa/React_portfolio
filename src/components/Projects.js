@@ -5,7 +5,8 @@ import Pancake from "./Pancake";
 import "../style/Projects.css";
 import "../style/Mobile.css";
 
-import { projectsArr } from "../api/projectsAPI";
+import { projectsArr } from "../assets/projectsAPI";
+import { pancakeArr } from "../assets/imgAPI";
 
 const Projects = ({ onMouseEnter, onMouseLeave }) => {
   const [popUpCardText, setCardText] = useState("");
@@ -70,6 +71,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 popUpHidden="singleCardHidden"
                 url={url}
                 popUpCardText={popUpCardText}
+                img={pancakeArr[1].img}
               />
 
               <Pancake
@@ -81,6 +83,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 popUpHidden="singleCardHidden"
                 url={url}
                 popUpCardText={popUpCardText}
+                img={pancakeArr[0].img}
               />
 
               <Pancake
@@ -92,6 +95,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 popUpHidden="singleCardHidden"
                 url={url}
                 popUpCardText={popUpCardText}
+                img={pancakeArr[0].img}
               />
 
               <Pancake
@@ -103,6 +107,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 popUpHidden="singleCardHidden"
                 url={url}
                 popUpCardText={popUpCardText}
+                img={pancakeArr[0].img}
               />
 
               <Pancake
@@ -114,6 +119,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 popUpHidden="singleCardHidden"
                 url={url}
                 popUpCardText={popUpCardText}
+                img={pancakeArr[0].img}
               />
 
               <Pancake
@@ -125,6 +131,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 popUpHidden="singleCardHidden"
                 url={url}
                 popUpCardText={popUpCardText}
+                img={pancakeArr[0].img}
               />
             </div>
             {/* <!--- closing .projectsDiv --> */}

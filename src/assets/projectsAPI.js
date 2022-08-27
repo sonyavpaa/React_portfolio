@@ -2,7 +2,7 @@ export const projectsArr = [
   {
     header: "sonjavainionpaa.fi",
     desc: "",
-    text: "an arts portfolio i made with react",
+    text: "an arts portfolio i made with React.js",
     url: <a href="https://www.sonjavainionpaa.fi">sonjavainionpaa.fi</a>,
   },
   {
