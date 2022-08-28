@@ -17,12 +17,6 @@ const Pancake = (props) => {
         cldImg={props.img}
       />
 
-      {/* <img
-        className={`pancake${props.id}`}
-        src={require("../assets/img/pancake_01.jpg")}
-        alt="pancakes"
-      /> */}
-
       <div className={`pancaketext pancaketext${props.idRoman}`}>
         <p className="pancakeP">PANCAKE {props.idRoman}</p>
       </div>

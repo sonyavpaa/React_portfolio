@@ -46,7 +46,7 @@
 }
 
 .pancakes:hover {
-  opacity: 0.7;
+  opacity: 1;
   filter: grayscale(0);
   cursor: pointer;
 }
