@@ -16,7 +16,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
 
   const toggleCard = (e) => {
     let numb = parseInt(e.currentTarget.id);
-    console.log("here", projectsArr[numb]);
+
     e.currentTarget.children[1].style = "opacity:0";
     if (document.querySelector(".pancakesFilterOff")) {
       document

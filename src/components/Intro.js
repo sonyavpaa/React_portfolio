@@ -19,6 +19,7 @@ const Intro = ({ getName }) => {
     if (e.key === "Enter") {
       if (e.target.value.length > 0) {
         userName = e.target.value;
+
         e.target.className = "hide";
         getName(e);
         welcomeTextAnimate();
