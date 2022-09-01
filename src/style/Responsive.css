@@ -10,10 +10,14 @@
   text-align: center;
   width: 100%;
   height: 3em;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 input:focus {
   height: inherit;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 .welcomeTextContainerResponsive {
