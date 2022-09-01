@@ -5,10 +5,14 @@
 }
 
 .welcomeContainerResponsive input {
-  font-size: 1.2em;
+  font-size: 16px;
   text-align: center;
   width: 100%;
   height: inherit;
+}
+
+input:focus {
+  font-size: 16px;
 }
 
 .welcomeTextContainerResponsive {
