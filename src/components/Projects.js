@@ -3,17 +3,20 @@ import React, { useState } from "react";
 import Pancake from "./Pancake";
 
 import "../style/Projects.css";
-import "../style/Mobile.css";
+// import "../style/Responsive.css";
 
 import { projectsArr } from "../assets/projectsAPI";
 import { pancakeArr } from "../assets/imgAPI";
+import { BrowserView } from "react-device-detect";
 
 const Projects = ({ onMouseEnter, onMouseLeave }) => {
   const [popUpCardText, setCardText] = useState("");
   const [url, setUrl] = useState("");
+  const [src, setSrc] = useState("");
 
   const toggleCard = (e) => {
     let numb = parseInt(e.currentTarget.id);
+    console.log("here", projectsArr[numb]);
     e.currentTarget.children[1].style = "opacity:0";
     if (document.querySelector(".pancakesFilterOff")) {
       document
@@ -42,7 +45,8 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
         return (
           (e.currentTarget.lastChild.className = "singleCardShow"),
           setCardText(projectsArr[numb].text),
-          setUrl(projectsArr[numb].url)
+          setUrl(projectsArr[numb].url),
+          setSrc(projectsArr[numb].src)
         );
       }
     }
@@ -52,13 +56,14 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
 
     setCardText(projectsArr[numb].text);
     setUrl(projectsArr[numb].url);
+    setSrc(projectsArr[numb].src);
   };
 
   return (
     <section id="projectsSection">
       <h2 id="projects">PROJECTS</h2>
       <div className="boxes">
-        <div className="right"></div>
+        <BrowserView className="right"></BrowserView>
         <div className="left">
           <div className="projects">
             <div className="projectsDiv">
@@ -72,6 +77,7 @@ const Projects = ({ onMouseEnter, onMouseLeave }) => {
                 url={url}
                 popUpCardText={popUpCardText}
                 img={pancakeArr[1].img}
+                src={src}
               />
 
               <Pancake

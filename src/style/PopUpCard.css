@@ -28,6 +28,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-content: center;
 }
 
 .singleCardMain p {
@@ -37,13 +38,23 @@
 
 .cardLink {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.cardLink a {
+.cardLink a,
+.cardSrcLink a {
   color: yellow;
+  padding: 0.5em;
 }
 
-.cardLink a:hover .cardLink {
-  color: red;
+.cardLink a:hover,
+.cardSrcLink img:hover {
+  background-color: var(--clr__background03);
+}
+
+.gitHubLogo {
+  padding: 0.5em;
+  width: 3em !important;
+  height: auto !important;
+  border-radius: 50%;
 }

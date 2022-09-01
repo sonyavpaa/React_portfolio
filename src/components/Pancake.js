@@ -25,6 +25,7 @@ const Pancake = (props) => {
         active={props.popUpHidden}
         url={props.url}
         text={props.popUpCardText}
+        src={props.src}
       />
     </div>
   );

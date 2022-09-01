@@ -1,14 +1,15 @@
 import React from "react";
+import { BrowserView } from "react-device-detect";
 
 import "../style/About.css";
-import "../style/Mobile.css";
+// import "../style/Mobile.css";
 
 const AboutMe = ({ username }) => {
   return (
     <section className="about_me">
       <h2 id="about_me">ME LE PROGRAMMER</h2>
       <div className="boxes">
-        <div className="right"></div>
+        <BrowserView className="right"></BrowserView>
         <div className="left">
           <div className="about_mePContainer">
             <p>

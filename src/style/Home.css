@@ -56,9 +56,3 @@
     transform: translatex(1px);
   }
 }
-
-@media screen and (max-width: 800px) {
-  .logo {
-    display: none;
-  }
-}

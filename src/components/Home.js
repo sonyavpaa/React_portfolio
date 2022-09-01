@@ -4,11 +4,13 @@ import Intro from "./Intro";
 import Projects from "./Projects";
 
 import "../style/Home.css";
+import "../style/Responsive.css";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import ContactForm from "./ContactForm";
 import { projectsArr } from "../assets/projectsAPI";
-import { isBrowser } from "react-device-detect";
+
+import { isBrowser, BrowserView, MobileView } from "react-device-detect";
 
 const Home = () => {
   const [username, setUsername] = React.useState();
@@ -34,24 +36,37 @@ const Home = () => {
   };
 
   return (
-    <>
-      <div id="stickyContainer">
-        <div id="logoBox" className="animate">
-          <div className="logo"></div>
-          <div className="projectsTextContainer">
-            <p id="projectsText"></p>
+    <React.Fragment>
+      <BrowserView>
+        <div id="stickyContainer">
+          <div id="logoBox" className="animate">
+            <div className="logo"></div>
+            <div className="projectsTextContainer">
+              <p id="projectsText"></p>
+            </div>
           </div>
         </div>
-      </div>
-      <Intro getName={getName} />
-      <Projects
-        onMouseEnter={pancakeTextHover}
-        onMouseLeave={pancakeTextHoverOut}
-      />
-      <AboutMe username={username} />
-      <Skills />
-      <ContactForm />
-    </>
+
+        <Intro getName={getName} />
+        <Projects
+          onMouseEnter={pancakeTextHover}
+          onMouseLeave={pancakeTextHoverOut}
+        />
+        <AboutMe username={username} />
+        <Skills />
+        <ContactForm />
+      </BrowserView>
+      <MobileView className="mobileView">
+        <Intro getName={getName} />
+        <Projects
+          onMouseEnter={pancakeTextHover}
+          onMouseLeave={pancakeTextHoverOut}
+        />
+        <AboutMe username={username} />
+        <Skills />
+        <ContactForm />
+      </MobileView>
+    </React.Fragment>
   );
 };
 
