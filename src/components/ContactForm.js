@@ -12,7 +12,6 @@ const ContactForm = () => {
     const button = document.getElementById("button");
     button.classList.add("loading");
     button.disabled = true;
-    console.log(e);
     emailjs
       .sendForm(
         "service_h655ukq",

@@ -14,8 +14,7 @@ const AboutMe = ({ username }) => {
           <div className="about_mePContainer">
             <p>
               Dear <span id="helloName">{username ? username : "You"}</span>,
-              this portfolio is an insight into my skills gained in my web dev
-              studies in Business College Helsinki. It is intended to showcase
+              this portfolio is an insight into my skills in web development: it is intended to showcase
               my current level in coding and having fun with it! <br />
               <br />
               My current top 3 interests in web dev:{" "}
