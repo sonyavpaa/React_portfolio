@@ -14,7 +14,7 @@ const ContactForm = () => {
     button.disabled = true;
     emailjs
       .sendForm(
-        "service_h655ukq",
+        process.env.REACT_APP_SERVICE,
         "template_uei4rzs",
         form.current,
         "OYsUsvoEKPEh9Bx3k"
